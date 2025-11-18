@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link href="./CSS/index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+
+<body>
+    <div class="container-wrapper mt-5 mainDiv">
+        <h1>Form Validation</h1>
+
+        <form id="form" class="row g-3 needs-validation mt-3" novalidate>
+            <div class="incorrect">
+
+                <label for="fullName-input" class="form-label"> <i class="fa-solid fa-user-tie"></i></label>
+
+                <input type="text" class="form-control" id="fullName" placeholder="First Name" required>
+
+            </div>
+            <div>
+
+                <label for="email-input" class="form-label"><i class="fa-solid fa-envelope"></i></label>
+                <input type="email" class="form-control" id="email" placeholder="Email address" required>
+
+            </div>
+            <div>
+
+                <label for="password-input" class="form-label"> <i class="fa-solid fa-lock"></i></label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required minlength="8">
+
+            </div>
+            <div>
+
+                <label for="repeatPassword-input" class="form-label"> <i class="fa-solid fa-lock"></i></label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password"
+                    required>
+
+            </div>
+
+            <div class="d-grid mt-3">
+                <button class="btn submitBtn text-light" type="submit" id="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="terms" required>
+            <label class="form-check-label" for="terms">
+                Agree to terms and conditions
+            </label>
+
+        </div>
+    </div>
+    <div id="successMessage" class="alert alert-success mt-3 d-none">
+        Successfully Submitted
+    </div>
+
+    </div>
+
+
+</body>
+<script src="./javaScript/index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
